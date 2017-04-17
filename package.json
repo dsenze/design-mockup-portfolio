@@ -1,0 +1,18 @@
+{
+  "name": "grunt-design-mockup-portfolio",
+  "version": "1.0.0",
+  "description": "automate cleanup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tommy Vadman",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-move": "0.0.6",
+    "grunt-responsive-images": "^1.10.1",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
