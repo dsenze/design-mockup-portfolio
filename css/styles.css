@@ -1,105 +1,122 @@
-           * {
-               font-family: 'Maven Pro', sans-serif;
-           }
-           
-           main {
-               display: border-box;
-               margin: auto;
-               width: 80%;
-           }
-           /*Styling for header*/
-           
-           .header_contain {
-               margin-left: 0px;
-               margin-right: 0px;
-               border-bottom: 3px solid #bcbbbb;
-               margin-bottom: 1.5em;
-               margin-top: 2em;
-           }
-           
-           .header__profile {
-               text-align: right;
-               text-transform: uppercase;
-           }
-           
-           .header__logo {
-               padding-left: 0px;
-           }
-           
-           #udacity-logo {
-               display: block;
-               fill: #02b3e4;
-               margin: auto;
-               float: left;
-           }
-           /*Projects*/
-           
-           .projects_title {
-               padding-left: 15px;
-           }
-           
-           .project_description {
-               text-align: center;
-           }
-           
-           .project_description_name {
-               font-size: 18px;
-               text-transform: uppercase;
-           }
-           
-           .siteimage_container {
-               margin-left: 0px;
-               margin-right: 0px;
-           }
-           /*Override bootstraps viewports*/
-           
-           @media screen and (max-width: 991px) and (min-width: 738px) {
-               .img-responsive {
-                   display: inline;
+               * {
+                   font-family: 'Lato', sans-serif;
+                   color: #2d3c49
                }
-           }
-           
-           @media (max-width: 530px) {
-               .header__profile col-md-6 {
-                   width: 100px;
+               
+               main {
+                   margin: auto;
+                   width: 80%;
                }
-               .header__profile__fullname_text {
-                   font-size: 18px;
+               /*Styling for header*/
+               
+               .header-contain {
+                   margin-left: 0px;
+                   margin-right: 0px;
+                   border-bottom: 3px solid #7d97ad;
+                   margin-bottom: 1.5em;
+                   margin-top: 2em;
                }
-               .header__profile__role_text {
+               
+               .header-profile {
+                   text-align: right;
+                   text-transform: uppercase;
+               }
+               
+               .header-logo {
+                   padding-left: 0px;
+               }
+               /*TODO CSS validator complains on fill: #02b3e4 */
+               
+               #udacity-logo {
+                   display: block;
+                   fill: #02b3e4;
+                   margin: auto;
+                   float: left;
+               }
+               /*Styling for projects*/
+               
+               .projects-title {
+                   padding-left: 15px;
+               }
+               
+               .project-description {
+                   text-align: center;
+               }
+               
+               .project-description-name {
+                   font-size: 24px;
+                   text-transform: uppercase;
+               }
+               
+               .project-url {
                    font-size: 12px;
                }
+               /*Other styling*/
+               
                .responsive-center-small-vp {
-                   text-align: center;
+                   color: #7d97ad;
                }
-               .scaling-logo {
-                   height: 60px;
-                   width: 60px;
+               
+               .siteimage-container {
+                   margin-left: 0px;
+                   margin-right: 0px;
                }
-           }
-           
-           @media (min-width: 768px) and (max-width: 1024px) {
-               .container {
-                   width: 600px;
+               /*Override bootstraps viewports for better responsive design.*/
+               
+               @media screen and (max-width: 992px) and (min-width: 300px) {
+                   .img-responsive {
+                       display: inline;
+                   }
                }
-               .header__profile__fullname_text {
-                   font-size: 30px;
+               
+               @media (max-width: 530px) {
+                   .header-profile col-md-6 {
+                       width: 100px;
+                   }
+                   .header-profile-fullname-text {
+                       font-size: 18px;
+                   }
+                   .header-profile-role-text {
+                       font-size: 12px;
+                   }
+                   .responsive-center-small-vp {
+                       text-align: center;
+                   }
+                   .scaling-logo {
+                       height: 60px;
+                       width: 60px;
+                   }
+                   .project-description-name {
+                       font-size: 15px;
+                   }
+                   .project-url {
+                       font-size: 8px;
+                   }
                }
-               .header__profile__role_text {
-                   font-size: 20px;
+               
+               @media (min-width: 531px) and (max-width: 1024px) {
+                   .container {
+                       width: 600px;
+                   }
+                   .header-profile-fullname-text {
+                       font-size: 30px;
+                   }
+                   .header-profile-role-text {
+                       font-size: 20px;
+                   }
+                   .responsive-center-small-vp {
+                       font-size: 24px;
+                   }
+                   .project-description-name {
+                       font-size: 15px;
+                   }
+                   .project-url {
+                       font-size: 8px;
+                   }
                }
-               p {
-                   font-size: 8px;
+               
+               @media (max-width: 992px) {
+                   .responsive-center-small-vp {
+                       text-align: center;
+                   }
                }
-               .responsive-center-small-vp {
-                   font-size: 24px;
-               }
-           }
-           
-           @media (max-width: 992px) {
-               .responsive-center-small-vp {
-                   text-align: center;
-               }
-           }
-           
-           @media (min-width: 1200px) {}
